@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Webtactix PoC</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --surface: #1e293b;
+      --surface-2: #334155;
+      --border: #475569;
+      --text: #e2e8f0;
+      --text-dim: #94a3b8;
+      --accent: #3b82f6;
+      --accent-hover: #2563eb;
+      --success: #22c55e;
+      --error: #ef4444;
+      --warning: #f59e0b;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--accent), #a855f7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    header p {
+      color: var(--text-dim);
+      margin-top: 0.5rem;
+    }
+
+    .input-section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .input-group {
+      margin-bottom: 1rem;
+    }
+
+    .input-group label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-dim);
+      margin-bottom: 0.4rem;
+    }
+
+    .input-group input,
+    .input-group textarea {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text);
+      font-size: 0.95rem;
+      font-family: inherit;
+      transition: border-color 0.2s;
+    }
+
+    .input-group input:focus,
+    .input-group textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+    .input-group textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    .row {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-end;
+    }
+
+    .row .input-group { flex: 1; margin-bottom: 0; }
+
+    .btn {
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: white;
+    }
+
+    .btn-primary:hover { background: var(--accent-hover); }
+
+    .btn-primary:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .btn-success {
+      background: var(--success);
+      color: white;
+    }
+
+    .btn-success:hover { background: #16a34a; }
+
+    .status-bar {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1.5rem;
+      display: none;
+    }
+
+    .status-bar.visible { display: flex; align-items: center; gap: 1rem; }
+
+    .status-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--warning);
+      animation: pulse 1.5s infinite;
+    }
+
+    .status-dot.done { background: var(--success); animation: none; }
+    .status-dot.error { background: var(--error); animation: none; }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    .status-text { flex: 1; font-size: 0.9rem; }
+    .step-count { font-weight: 700; color: var(--accent); font-size: 1.1rem; }
+
+    .steps-section {
+      display: none;
+    }
+
+    .steps-section.visible { display: block; }
+
+    .steps-section h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: var(--text-dim);
+    }
+
+    .steps-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      max-height: 500px;
+      overflow-y: auto;
+      padding-right: 0.5rem;
+    }
+
+    .step-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.8rem 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .step-num {
+      background: var(--accent);
+      color: white;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .step-num.fail { background: var(--error); }
+
+    .step-info { flex: 1; min-width: 0; }
+    .step-action { font-weight: 600; font-size: 0.9rem; }
+    .step-detail { color: var(--text-dim); font-size: 0.8rem; margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+    .step-badge {
+      font-size: 0.7rem;
+      padding: 2px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .step-badge.pass { background: rgba(34,197,94,0.15); color: var(--success); }
+    .step-badge.fail { background: rgba(239,68,68,0.15); color: var(--error); }
+
+    .download-section {
+      margin-top: 1.5rem;
+      text-align: center;
+      display: none;
+    }
+
+    .download-section.visible { display: block; }
+
+    .download-section .btn {
+      font-size: 1.1rem;
+      padding: 1rem 2.5rem;
+    }
+
+    .steps-list::-webkit-scrollbar { width: 6px; }
+    .steps-list::-webkit-scrollbar-track { background: var(--surface); }
+    .steps-list::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+    .options-row {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      margin-top: 0.5rem;
+    }
+
+    .checkbox-group {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.85rem;
+      color: var(--text-dim);
+    }
+
+    .checkbox-group input[type="checkbox"] {
+      accent-color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>⚡ Webtactix PoC</h1>
+      <p>AI-powered browser automation with TPE report generation</p>
+    </header>
+
+    <div class="input-section">
+      <div class="input-group">
+        <label>Target URL</label>
+        <input type="url" id="urlInput" placeholder="https://example.com" value="" />
+      </div>
+      <div class="input-group">
+        <label>Goal</label>
+        <textarea id="goalInput" placeholder="Describe what you want to accomplish..."></textarea>
+      </div>
+      <div class="row" style="margin-top: 1rem;">
+        <div class="options-row">
+          <label class="checkbox-group">
+            <input type="checkbox" id="headlessCheck" />
+            Headless mode
+          </label>
+        </div>
+        <button class="btn btn-primary" id="runBtn" onclick="startRun()">
+          ▶ Run Goal
+        </button>
+      </div>
+    </div>
+
+    <div class="status-bar" id="statusBar">
+      <div class="status-dot" id="statusDot"></div>
+      <span class="status-text" id="statusText">Initializing...</span>
+      <span class="step-count" id="stepCount">0 steps</span>
+    </div>
+
+    <div class="steps-section" id="stepsSection">
+      <h2>Execution Steps</h2>
+      <div class="steps-list" id="stepsList"></div>
+    </div>
+
+    <div class="download-section" id="downloadSection">
+      <button class="btn btn-success" id="downloadBtn" onclick="downloadReport()">
+        📄 Download TPE Report (.docx)
+      </button>
+    </div>
+  </div>
+
+  <script>
+    let currentRunId = null;
+    let ws = null;
+
+    function startRun() {
+      const url = document.getElementById('urlInput').value.trim();
+      const goal = document.getElementById('goalInput').value.trim();
+      const headless = document.getElementById('headlessCheck').checked;
+
+      if (!url) { alert('Please enter a URL'); return; }
+      if (!goal) { alert('Please enter a goal'); return; }
+
+      document.getElementById('runBtn').disabled = true;
+      document.getElementById('stepsList').innerHTML = '';
+      document.getElementById('statusBar').classList.add('visible');
+      document.getElementById('stepsSection').classList.add('visible');
+      document.getElementById('downloadSection').classList.remove('visible');
+      document.getElementById('statusDot').className = 'status-dot';
+      document.getElementById('statusText').textContent = 'Starting run...';
+      document.getElementById('stepCount').textContent = '0 steps';
+
+      fetch('/api/run', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ url, goal, headless }),
+      })
+        .then(r => r.json())
+        .then(data => {
+          currentRunId = data.run_id;
+          document.getElementById('statusText').textContent = `Run ${data.run_id} started...`;
+          connectWebSocket(data.run_id);
+        })
+        .catch(err => {
+          alert('Failed to start run: ' + err.message);
+          document.getElementById('runBtn').disabled = false;
+        });
+    }
+
+    function connectWebSocket(runId) {
+      const proto = location.protocol === 'https:' ? 'wss:' : 'ws:';
+      ws = new WebSocket(`${proto}//${location.host}/api/ws/${runId}`);
+
+      ws.onmessage = (event) => {
+        const msg = JSON.parse(event.data);
+
+        if (msg.type === 'step') {
+          addStep(msg.data);
+        } else if (msg.type === 'progress') {
+          const phase = msg.data.phase;
+          document.getElementById('statusText').textContent =
+            phase === 'navigated' ? `Navigated to ${msg.data.url}` :
+            phase === 'planning' ? 'Planning actions...' :
+            phase === 'executing' ? 'Executing goal...' :
+            phase === 'complete' ? `Complete! ${msg.data.total_steps} steps` :
+            phase;
+        } else if (msg.type === 'status') {
+          document.getElementById('statusText').textContent = `Status: ${msg.status}`;
+        } else if (msg.type === 'done') {
+          onRunComplete(msg);
+        } else if (msg.type === 'error') {
+          onRunError(msg.message);
+        }
+      };
+
+      ws.onerror = () => {
+        document.getElementById('statusText').textContent = 'WebSocket error';
+      };
+
+      ws.onclose = () => {
+        console.log('WebSocket closed');
+      };
+    }
+
+    function addStep(data) {
+      const list = document.getElementById('stepsList');
+      const count = list.children.length + 1;
+
+      const card = document.createElement('div');
+      card.className = 'step-card';
+
+      const ok = data.ok !== false;
+      const action = data.action || '?';
+      const name = data.name || data.role || '';
+      const detail = data.plan_goal || data.url || '';
+
+      card.innerHTML = `
+        <div class="step-num ${ok ? '' : 'fail'}">${count}</div>
+        <div class="step-info">
+          <div class="step-action">${escapeHtml(action)}${name ? ' — ' + escapeHtml(name) : ''}</div>
+          <div class="step-detail">${escapeHtml(detail)}</div>
+        </div>
+        <span class="step-badge ${ok ? 'pass' : 'fail'}">${ok ? 'pass' : 'fail'}</span>
+      `;
+
+      list.appendChild(card);
+      list.scrollTop = list.scrollHeight;
+      document.getElementById('stepCount').textContent = `${count} steps`;
+    }
+
+    function onRunComplete(msg) {
+      document.getElementById('statusDot').classList.add('done');
+      document.getElementById('statusText').textContent =
+        `Run complete — ${msg.steps_count || 0} steps executed`;
+      document.getElementById('runBtn').disabled = false;
+
+      if (msg.report_path) {
+        document.getElementById('downloadSection').classList.add('visible');
+      }
+    }
+
+    function onRunError(message) {
+      document.getElementById('statusDot').classList.add('error');
+      document.getElementById('statusText').textContent = `Error: ${message}`;
+      document.getElementById('runBtn').disabled = false;
+    }
+
+    function downloadReport() {
+      if (!currentRunId) return;
+      window.open(`/api/runs/${currentRunId}/report`, '_blank');
+    }
+
+    function escapeHtml(text) {
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+  </script>
+</body>
+</html>

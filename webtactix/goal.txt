@@ -1,0 +1,534 @@
+Type 'Veeva-CV-Owner@sb-rhythmtx.com' into 'Username' input field
+Click on 'Continue' button
+Type 'Pothos12$52@25*' into 'Password' input field
+Click on 'Log In' button
+Wait for 5 seconds
+Click on 'More Create Options' dropdown
+Click on 'Document'
+Click on 'Continue' button
+Upload file "C:\Users\HitendraJawage\Downloads\TestDocument1.docx" into 'Uploader' uploader
+Click on 'Classify Documents Now' button
+Type 'Governance and Procedure › Standard Operating Procedure (SOP)' into 'Select a Document Type, Subtype, or Classification' input field
+Click on 'Governance and Procedure › Standard Operating Procedure (SOP)'
+Click on 'Next' button
+Type 'Test1_' into 'Name' input field and save the generated document name as 'DocID'
+Scroll down on the main page until 'Training Impact' option is visible
+Type 'HR' into 'Owning Department' input field
+Press Enter
+Type 'India' into 'Country' input field
+Press Enter
+Click on 'Yes' radio button for 'Training Impact' field [id="trainingImpactYES"]
+Type 'HR' into 'Departments to be Trained' input field
+Press Enter
+Click on 'Document Change Control' section
+Scroll up on the main page until 'Save' button is visible
+Click on 'Save' button to the right of 'Cancel' button
+Click on 'Working Library'
+Type stored value 'DocID' into 'Search' input field in the navigation bar
+Press Enter
+Click on stored value 'DocID' document name in the search results                      
+Click on 'Workflow Actions' icon
+Click on 'Send for Review'
+Wait for 1 second
+Type the date 5 days from now into 'Date' input field with format %d-%b-%Y
+Press Enter
+Click on 'Reviewer(s)' input field
+Type 'Veeva-CV-Approver1@sb-rhythmtx.com' into 'Reviewer(s)' input field
+Click on 'Veeva-CV-Approver1 xLM Validation Veeva-CV-Approver1@sb-rhythmtx.com' in the search results  
+Click on 'Start' button
+Wait for 2 seconds
+Click on 'User Profile' icon
+Click on 'Log Out'
+Click on 'Switch User' button if visible, otherwise wait for 1 second
+Type 'Veeva-CV-Approver1@sb-rhythmtx.com' into 'Username' input field
+Click on 'Continue' button
+Type 'Pothos12$52@25*' into 'Password' input field
+Click on 'Log In' button
+Type stored value 'DocID' into 'Search' input field in the navigation bar
+Press Enter
+Click on stored value 'DocID' document name in the search results                      
+Wait for 1 second
+Click on 'Complete' button
+Select 'Quality Review' from 'Review Context' dropdown [id="capacity"]
+Click on 'Complete' button
+Click on 'User Profile' icon
+Click on 'Log Out'
+Click on 'Switch User' button
+Type 'Veeva-CV-Owner@sb-rhythmtx.com' into 'Username' input field
+Click on 'Continue' button
+Type 'Pothos12$52@25*' into 'Password' input field
+Click on 'Log In' button
+Type stored value 'DocID' into 'Search' input field in the navigation bar
+Press Enter
+Click on stored value 'DocID' document name in the search results                      
+Wait for 1 second
+Click on 'Complete' button
+Select 'Owner Assessment' from 'Review Context' dropdown [id="capacity"]
+Click on 'No Changes Required – Ready for Approval' radio button [id="reviewCompleted1368039483773"]
+Click on 'Add Comments' button
+Type 'Review Completed' into 'Please Add Your Comments...' input field
+Click on 'Complete' button
+Click on 'User Profile' icon
+Click on 'Log Out'
+Click on 'Switch User' button
+Type 'Veeva-CV-DocControl@sb-rhythmtx.com' into 'Username' input field
+Click on 'Continue' button
+Type 'Pothos12$52@25*' into 'Password' input field
+Click on 'Log In' button
+Type stored value 'DocID' into 'Search' input field in the navigation bar
+Press Enter
+Click on stored value 'DocID' document name in the search results                      
+Click on 'Edit Fields' button [aria-label="Edit Fields"]
+Scroll down in the main form panel until 'Change Information' section is visible
+Click on 'Document Change Control' section
+Click on 'No' radio button for 'Requires DCC?' field
+Scroll up in the main form panel until 'General' section is visible
+Click on 'Save' button to the right of 'Cancel' button
+Click on 'Workflow Actions' icon
+Click on 'Send for Approval'
+Click on 'Approver(s)' input field
+Type 'Veeva-CV-Approver1@sb-rhythmtx.com' into 'Approver(s)' input field
+Click on 'Veeva-CV-Approver1 xLM Validation Veeva-CV-Approver1@sb-rhythmtx.com' in the search results
+Type 'Veeva-CV-Approver2@sb-rhythmtx.com' into 'Approver(s)' input field
+Press Down
+Press Enter
+Click on 'Workflow Due Date' input field [id="dp1775642089071"]
+Type the date 5 days from now into 'Workflow Due Date' input field with format %d-%b-%Y
+Press Enter
+Click on 'QA Approver' input field
+Type 'Veeva-CV-QA@sb-rhythmtx.com' into 'QA Approver' input field                     
+Press Down
+Press Enter
+Click on 'Start' button
+Click on 'User Profile' icon
+Click on 'Log Out'
+Click on 'Switch User' button if visible, otherwise wait for 1 second
+Type 'Veeva-CV-Approver1@sb-rhythmtx.com' into 'Username' input field
+Click on 'Continue' button
+Type 'Pothos12$52@25*' into 'Password' input field
+Click on 'Log In' button
+Type stored value 'DocID' into 'Search' input field in the navigation bar
+Press Enter
+Click on stored value 'DocID' document name in the search results                      
+Wait for 1 second
+Click on 'Complete' button
+Wait for 3 seconds
+Click on 'Approve' radio button
+Click on 'Username' input field [id="username"]
+Type 'Veeva-CV-Approver1@sb-rhythmtx.com' into 'Username' input field [id="username"]
+Click on 'Password' input field [id="mask-password"]
+Type 'Pothos12$52@25*' into 'Password' input field [id="mask-password"]
+Select 'Validation Approval' from 'Please Select' dropdown [id="capacity"]             
+Click on 'Complete' button
+Click on 'User Profile' icon
+Click on 'Log Out'
+Click on 'Switch User' button if visible, otherwise wait for 1 second
+Type 'Veeva-CV-Approver2@sb-rhythmtx.com' into 'Username' input field
+Click on 'Continue' button
+Type 'Pothos12$52@25*' into 'Password' input field
+Click on 'Log In' button
+Type stored value 'DocID' into 'Search' input field in the navigation bar
+Press Enter
+Click on stored value 'DocID' document name in the search results                      
+Wait for 1 second
+Click on 'Complete' button
+Wait for 3 seconds
+Click on 'Approve' radio button
+Click on 'Username' input field [id="username"]
+Type 'Veeva-CV-Approver2@sb-rhythmtx.com' into 'Username' input field [id="username"]
+Click on 'Password' input field [id="mask-password"]
+Type 'Pothos12$52@25*' into 'Password' input field [id="mask-password"]
+Select 'Quality Approval' from 'Please Select' dropdown [id="capacity"]                
+Click on 'Complete' button
+Click on 'User Profile' icon
+Click on 'Log Out'
+Click on 'Switch User' button if visible, otherwise wait for 1 second
+Type 'Veeva-CV-QA@sb-rhythmtx.com' into 'Username' input field
+Click on 'Continue' button
+Type 'Pothos12$52@25*' into 'Password' input field
+Click on 'Log In' button
+Type stored value 'DocID' into 'Search' input field in the navigation bar
+Press Enter
+Click on stored value 'DocID' document name in the search results                      
+Wait for 1 second
+Click on 'Accept' button
+Click on 'Complete' button
+Wait for 1 second
+Click on 'Approve' radio button
+Click on 'Username' input field [id="username"]
+Type 'Veeva-CV-QA@sb-rhythmtx.com' into 'Username' input field [id="username"]
+Click on 'Password' input field [id="mask-password"]
+Type 'Pothos12$52@25*' into 'Password' input field [id="mask-password"]
+Select 'Quality Assurance Approval' from 'Please Select' dropdown [id="capacity"]     
+Click on 'Complete' button
+Click on 'Close' button if visible, otherwise wait for 1 second
+Click on 'User Profile' icon
+Click on 'Log Out'
+Click on 'Switch User' button if visible, otherwise wait for 1 second
+Type 'Veeva-CV-DocControl@sb-rhythmtx.com' into 'Username' input field
+Click on 'Continue' button
+Type 'Pothos12$52@25*' into 'Password' input field
+Click on 'Log In' button
+Type stored value 'DocID' into 'Search' input field in the navigation bar
+Press Enter
+Click on stored value 'DocID' document name in the search results                      
+Wait for 1 second
+Click on 'Workflow Actions' icon
+Click on 'Release to Effective'
+Click on 'Start' button
+Click on 'User Profile' icon
+Click on 'Log Out'
+Click on 'Switch User' button
+Type 'Veeva-CV-Owner@sb-rhythmtx.com' into 'Username' input field
+Click on 'Continue' button
+Type 'Pothos12$52@25*' into 'Password' input field
+Click on 'Log In' button
+Click on 'More Create Options' dropdown
+Click on 'Document'
+Click on 'Continue' button
+Upload file "C:\Users\HitendraJawage\Downloads\TestDocument1.docx" into 'Uploader' uploader
+Click on 'Classify Documents Now' button
+Type 'Governance and Procedure › Standard Operating Procedure (SOP)' into 'Select a Document Type, Subtype, or Classification' input field
+Click on 'Governance and Procedure › Standard Operating Procedure (SOP)'
+Click on 'Next' button
+Type 'Test1_' into 'Name' input field and save the generated document name as 'DocID1'
+Scroll down on the main page until 'Training Impact' option is visible
+Type 'HR' into 'Owning Department' input field
+Press Enter
+Type 'India' into 'Country' input field
+Press Enter
+Click on 'Yes' radio button for 'Training Impact' field [id="trainingImpactYES"]
+Type 'HR' into 'Departments to be Trained' input field
+Press Enter
+Click on 'Document Change Control' section
+Scroll up on the main page until 'Save' button is visible
+Click on 'Save' button to the right of 'Cancel' button
+Click on 'Working Library'
+Hover over stored value 'DocID1' document name for 5 seconds
+Click on 'Actions Menu' for stored value 'DocID1' document
+Click on 'Send for Review'
+Wait for 1 second
+Type the date 5 days from now into 'Date' input field with format %d-%b-%Y
+Press Enter
+Click on 'Reviewer(s)' input field
+Type 'Veeva-CV-Approver1@sb-rhythmtx.com' into 'Reviewer(s)' input field
+Click on 'Veeva-CV-Approver1 xLM Validation Veeva-CV-Approver1@sb-rhythmtx.com' in the search results  
+Click on 'Start' button
+Wait for 2 seconds
+Click on 'User Profile' icon
+Click on 'Log Out'
+Click on 'Switch User' button if visible, otherwise wait for 1 second
+Type 'Veeva-CV-Approver1@sb-rhythmtx.com' into 'Username' input field
+Click on 'Continue' button
+Type 'Pothos12$52@25*' into 'Password' input field
+Click on 'Log In' button
+Type stored value 'DocID1' into 'Search' input field in the navigation bar
+Press Enter
+Click on stored value 'DocID1' document name in the search results                     
+Wait for 1 second
+Click on 'Complete' button
+Select 'Quality Review' from 'Review Context' dropdown [id="capacity"]
+Click on 'Complete' button
+Click on 'User Profile' icon
+Click on 'Log Out'
+Click on 'Switch User' button
+Type 'Veeva-CV-Owner@sb-rhythmtx.com' into 'Username' input field
+Click on 'Continue' button
+Type 'Pothos12$52@25*' into 'Password' input field
+Click on 'Log In' button
+Type stored value 'DocID1' into 'Search' input field in the navigation bar
+Press Enter
+Click on stored value 'DocID1' document name in the search results                     
+Wait for 1 second
+Click on 'Complete' button
+Select 'Owner Assessment' from 'Review Context' dropdown [id="capacity"]
+Click on 'No Changes Required – Ready for Approval' radio button [id="reviewCompleted1368039483773"]
+Click on 'Add Comments' button
+Type 'Review Completed' into 'Please Add Your Comments...' input field
+Click on 'Complete' button
+Click on 'User Profile' icon
+Click on 'Log Out'
+Click on 'Switch User' button
+Type 'Veeva-CV-DocControl@sb-rhythmtx.com' into 'Username' input field
+Click on 'Continue' button
+Type 'Pothos12$52@25*' into 'Password' input field
+Click on 'Log In' button
+Type stored value 'DocID1' into 'Search' input field in the navigation bar
+Press Enter
+Click on stored value 'DocID1' document name in the search results                     
+Wait for 1 second
+Click on 'Edit Fields' button [aria-label="Edit Fields"]
+Scroll down in the main form panel until 'Change Information' section is visible
+Click on 'Document Change Control' section
+Click on 'No' radio button for 'Requires DCC?' field
+Scroll up in the main form panel until 'General' section is visible
+Click on 'Save' button to the right of 'Cancel' button
+Click on 'Workflow Actions' icon
+Click on 'Send for Approval'
+Click on 'Approver(s)' input field
+Type 'Veeva-CV-Approver1@sb-rhythmtx.com' into 'Approver(s)' input field
+Click on 'Veeva-CV-Approver1 xLM Validation Veeva-CV-Approver1@sb-rhythmtx.com' in the search results
+Type 'Veeva-CV-Approver2@sb-rhythmtx.com' into 'Approver(s)' input field
+Press Down
+Press Enter
+Click on 'Workflow Due Date' input field [id="dp1775642089071"]
+Type the date 5 days from now into 'Workflow Due Date' input field with format %d-%b-%Y
+Press Enter
+Click on 'QA Approver' input field
+Type 'Veeva-CV-QA@sb-rhythmtx.com' into 'QA Approver' input field                     
+Press Down
+Press Enter
+Click on 'Start' button
+Click on 'User Profile' icon
+Click on 'Log Out'
+Click on 'Switch User' button
+Type 'Veeva-CV-Approver1@sb-rhythmtx.com' into 'Username' input field
+Click on 'Continue' button
+Type 'Pothos12$52@25*' into 'Password' input field
+Click on 'Log In' button
+Type stored value 'DocID1' into 'Search' input field in the navigation bar
+Press Enter
+Click on stored value 'DocID1' document name in the search results                     
+Wait for 1 second
+Click on 'Complete' button
+Wait for 3 seconds
+Click on 'Approve' radio button
+Click on 'Username' input field [id="username"]
+Type 'Veeva-CV-Approver1@sb-rhythmtx.com' into 'Username' input field [id="username"]
+Click on 'Password' input field [id="mask-password"]
+Type 'Pothos12$52@25*' into 'Password' input field [id="mask-password"]
+Select 'Validation Approval' from 'Please Select' dropdown [id="capacity"]             
+Click on 'Complete' button
+Click on 'User Profile' icon
+Click on 'Log Out'
+Click on 'Switch User' button if visible, otherwise wait for 1 second
+Type 'Veeva-CV-Approver2@sb-rhythmtx.com' into 'Username' input field
+Click on 'Continue' button
+Type 'Pothos12$52@25*' into 'Password' input field
+Click on 'Log In' button
+Type stored value 'DocID1' into 'Search' input field in the navigation bar
+Press Enter
+Click on stored value 'DocID1' document name in the search results                     
+Wait for 1 second
+Click on 'Complete' button
+Wait for 3 seconds
+Click on 'Approve' radio button
+Click on 'Username' input field [id="username"]
+Type 'Veeva-CV-Approver2@sb-rhythmtx.com' into 'Username' input field [id="username"]
+Click on 'Password' input field [id="mask-password"]
+Type 'Pothos12$52@25*' into 'Password' input field [id="mask-password"]
+Select 'Quality Approval' from 'Please Select' dropdown [id="capacity"]                
+Click on 'Complete' button
+Click on 'User Profile' icon
+Click on 'Log Out'
+Click on 'Switch User' button if visible, otherwise wait for 1 second
+Type 'Veeva-CV-QA@sb-rhythmtx.com' into 'Username' input field
+Click on 'Continue' button
+Type 'Pothos12$52@25*' into 'Password' input field
+Click on 'Log In' button
+Type stored value 'DocID1' into 'Search' input field in the navigation bar
+Press Enter
+Click on stored value 'DocID1' document name in the search results                     
+Wait for 1 second
+Click on 'Accept' button
+Click on 'Complete' button
+Wait for 1 second
+Click on 'Approve' radio button
+Click on 'Username' input field [id="username"]
+Type 'Veeva-CV-QA@sb-rhythmtx.com' into 'Username' input field [id="username"]
+Click on 'Password' input field [id="mask-password"]
+Type 'Pothos12$52@25*' into 'Password' input field [id="mask-password"]
+Select 'Quality Assurance Approval' from 'Please Select' dropdown [id="capacity"]     
+Click on 'Complete' button
+Click on 'Close' button if visible, otherwise wait for 1 second
+Click on 'User Profile' icon
+Click on 'Log Out'
+Click on 'Switch User' button if visible, otherwise wait for 1 second
+Type 'Veeva-CV-DocControl@sb-rhythmtx.com' into 'Username' input field
+Click on 'Continue' button
+Type 'Pothos12$52@25*' into 'Password' input field
+Click on 'Log In' button
+Type stored value 'DocID1' into 'Search' input field in the navigation bar
+Press Enter
+Click on stored value 'DocID1' document name in the search results                     
+Wait for 1 second
+Click on 'Workflow Actions' icon
+Click on 'Release to Effective'
+Click on 'Start' button
+Click on 'User Profile' icon
+Click on 'Log Out'
+Click on 'Switch User' button
+Type 'Veeva-CV-DocControl@sb-rhythmtx.com' into 'Username' input field
+Click on 'Continue' button
+Type 'Pothos12$52@25*' into 'Password' input field
+Click on 'Log In' button
+Click on 'Change Management'
+Click on 'Document Change Requests'
+Click on 'Create' button
+Type 'This is the test description for script 22' into 'Description' input field
+Click on 'Reason' input field
+Type 'This is the test description for script 22' into 'Reason' input field
+Click on 'Target Document' input field
+Type stored value 'DocID' into 'Target Document' input field
+Click on stored value 'DocID' document in the search results
+Click on 'Save' button
+Capture value of 'Document Change Request ID' field and save as 'CRID'
+Click on 'Change Management'
+Click on 'Document Change Controls'
+Click on 'Create' button [aria-label="Create (Ctrl + Shift + C)"]
+Click on 'Description of Change' input field
+Type 'This is the Test DCC for Validation testing' into 'Description of Change' input field
+Click on 'Reason for Change' input field
+Type 'Validation testing' into 'Reason for Change' input field
+Click on 'No' radio button for 'Training Required' field
+Click on 'Save' button
+Capture value of 'Document Change Control ID' field and save as 'DCCID'
+Click on 'Workflow and State Change'
+Click on 'Route for Approval'
+Click on 'General Approvers' input field
+Type 'Veeva-CV-Approver1@sb-rhythmtx.com' into 'General Approvers' input field
+Click on 'Veeva-CV-Approver1 xLM Validation Veeva-CV-Approver1@sb-rhythmtx.com' in the search results
+Click on 'General Approvers' input field
+Type 'Veeva-CV-Approver2@sb-rhythmtx.com' into 'General Approvers' input field
+Click on 'Veeva-CV-Approver2 xLM Validation Veeva-CV-Approver2@sb-rhythmtx.com' in the search results
+Click on 'Document Control Approvers' input field
+Type 'Veeva-CV-DocControl@sb-rhythmtx.com' into 'Document Control Approvers' input field
+Click on 'Veeva-CV-DocControl xLM Validation Veeva-CV-DocControl@sb-rhythmtx.com' in the search results
+Click on 'QA Approvers' input field
+Type 'Veeva-CV-QA@sb-rhythmtx.com' into 'QA Approvers' input field
+Click on 'Veeva-CV-QA xLM Validation Veeva-CV-QA@sb-rhythmtx.com' in the search results
+Click on 'Due Date' input field [id="due_date c"]
+Type the date 5 days from now into 'Due Date' input field with format %d-%b-%Y
+Press Enter
+Click on 'Start' button
+Wait for 2 seconds
+Click on 'User Profile' icon
+Click on 'Log Out'
+Click on 'Switch User' button if visible, otherwise wait for 1 second
+Type 'Veeva-CV-Approver1@sb-rhythmtx.com' into 'Username' input field
+Click on 'Continue' button
+Type 'Pothos12$52@25*' into 'Password' input field
+Click on 'Log In' button
+Click on 'Notifications' icon
+Wait for 2 seconds
+Click on stored value 'DCCID' document link in the Notifications panel
+Click on 'Complete' button
+Click on 'Approve Changes & Release' button
+Type 'Approver' into 'Capacity' input field
+Press Down
+Press Enter
+Click on 'Username' input field
+Type 'Veeva-CV-Approver1@sb-rhythmtx.com' into 'Username' input field
+Click on 'Password' input field
+Type 'Pothos12$52@25*' into 'Password' input field
+Scroll down in the dialog panel until 'Reason' section is visible
+Click on 'Reason' input field
+Type 'I approve these changes' into 'Reason' input field                               
+Press Down
+Press Enter
+Press Tab
+Press Enter
+Click on 'User Profile' icon
+Click on 'Log Out'
+Click on 'Switch User' button
+Type 'Veeva-CV-Approver2@sb-rhythmtx.com' into 'Username' input field
+Click on 'Continue' button
+Type 'Pothos12$52@25*' into 'Password' input field
+Click on 'Log In' button
+Click on 'Notifications' icon
+Wait for 2 seconds
+Click on stored value 'DCCID' document link in the Notifications panel
+Click on 'Complete' button
+Click on 'Approve Changes & Release' button
+Type 'Approver' into 'Capacity' input field
+Press Down
+Press Enter
+Click on 'Username' input field
+Type 'Veeva-CV-Approver2@sb-rhythmtx.com' into 'Username' input field
+Click on 'Password' input field
+Type 'Pothos12$52@25*' into 'Password' input field
+Scroll down in the dialog panel until 'Reason' section is visible
+Click on 'Reason' input field
+Type 'I approve these changes' into 'Reason' input field                               
+Press Down
+Press Enter
+Press Tab
+Press Enter
+Click on 'User Profile' icon
+Click on 'Log Out'
+Click on 'Switch User' button
+Type 'Veeva-CV-DocControl@sb-rhythmtx.com' into 'Username' input field
+Click on 'Continue' button
+Type 'Pothos12$52@25*' into 'Password' input field
+Click on 'Log In' button
+Click on 'Notifications' icon
+Wait for 2 seconds
+Click on stored value 'DCCID' document link in the Notifications panel
+Click on 'Accept' button
+Click on 'Complete' button
+Click on 'Approve Changes & Release' button
+Type 'Document Control Approval' into 'Capacity' input field
+Press Down
+Press Enter
+Click on 'Username' input field
+Type 'Veeva-CV-DocControl@sb-rhythmtx.com' into 'Username' input field
+Click on 'Password' input field
+Type 'Pothos12$52@25*' into 'Password' input field
+Scroll down in the dialog panel until 'Reason' section is visible
+Click on 'Reason' input field
+Type 'I approve these changes' into 'Reason' input field                               
+Press Down
+Press Enter
+Press Tab
+Press Enter
+Click on 'User Profile' icon
+Click on 'Log Out'
+Click on 'Switch User' button if visible, otherwise wait for 1 second
+Type 'Veeva-CV-QA@sb-rhythmtx.com' into 'Username' input field
+Click on 'Continue' button
+Type 'Pothos12$52@25*' into 'Password' input field
+Click on 'Log In' button
+Click on 'Notifications' icon
+Wait for 2 seconds
+Click on stored value 'DCCID' document link in the Notifications panel
+Click on 'Complete' button
+Click on 'Approve Changes & Release' button
+Type 'QA Approval' into 'Capacity' input field
+Press Down
+Press Enter
+Click on 'Username' input field
+Type 'Veeva-CV-QA@sb-rhythmtx.com' into 'Username' input field
+Click on 'Password' input field
+Type 'Pothos12$52@25*' into 'Password' input field
+Scroll down in the dialog panel until 'Reason' section is visible
+Click on 'Reason' input field
+Type 'I approve these changes' into 'Reason' input field                               
+Press Down
+Press Enter
+Press Tab
+Press Enter
+Click on 'User Profile' icon
+Click on 'Log Out'
+Click on 'Switch User' button
+Type 'Veeva-CV-DocControl@sb-rhythmtx.com' into 'Username' input field
+Click on 'Continue' button
+Type 'Pothos12$52@25*' into 'Password' input field
+Click on 'Log In' button
+Click on 'Change Management'
+Click on 'Document Change Requests'
+Click on stored value 'CRID' document link in the list                                 
+Click on 'More Actions' button to the right of 'Edit' button
+Click on 'Sharing Settings'
+Click on 'Change Management'
+Click on 'Document Change Controls'
+Click on stored value 'DCCID' document link in the list                                
+Click on 'More Actions' button to the right of 'Edit' button
+Click on 'Sharing Settings'
+Click on 'Working Library'                                                             
+Click on stored value 'DocID' document name in the search results                     
+Click on 'Sharing Settings' button
+Click on 'Working Library'                                                             
+Click on stored value 'DocID1' document name in the search results                    
+Click on 'Sharing Settings' button
+Click on 'User Profile' icon
+Click on 'Log Out'
